@@ -13,15 +13,31 @@ function generate(){
        } 
 
        const authors = Object.keys(x);
-       console.log(authors)
+    //    console.log(authors)
 
        const new_quote = x[Math.floor(Math.random()*authors.length)]
-
+    //    const button = document.getElementsByClassName('btn btn-outline-warning')
+    //    console.log(new_quote)
     //    const content = document.getElementById("quotes")
-    //    content = new_quote
-
+    //    console.log(content)
+    //    button.addEventListener('onclick',generate=>{
+    //       content.innerHTML = new_quote
+    //    })
     document.getElementById("quotes").innerHTML = new_quote;
+    
 
+
+    const body = document.getElementById("hello")
+    const color = ['rgb(84 232 139)','rgb(84, 141, 246)','yellow','violet']
+    const num = parseInt(Math.random()*color.length)
+    body.style.backgroundColor = color[num]
+    
+
+    // body.style.backgroundColor = 'Blue'
+    // button.addEventListener('click',changecolor=>{
+    //  const num = parseInt(Math.random()*color.length)
+    //  body.style.backgroundColor = color[num]
+// })
 
 
 
